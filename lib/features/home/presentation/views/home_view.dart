@@ -58,8 +58,8 @@ class _HomeViewState extends State<HomeView> {
                       )
                     : ElevatedButton(
                         onPressed: () {
-                          bool ableToCreateRoom =
-                              checkCreatingRoomCapability(rooms ?? []);
+                          bool ableToCreateRoom = checkCreatingRoomCapability(
+                              rooms ?? [], currentUser!.id);
                           if (!ableToCreateRoom) {
                             showErrorSnackBar(
                                 context: context,
@@ -70,8 +70,8 @@ class _HomeViewState extends State<HomeView> {
                               context: context,
                               builder: (context) {
                                 return BottomSheetBody(
-                                    currentUser: currentUser,
-                                    );
+                                  currentUser: currentUser,
+                                );
                               },
                             );
                           }
