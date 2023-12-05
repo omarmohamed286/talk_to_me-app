@@ -1,7 +1,7 @@
 const String kTokenKey = 'token';
 
 //10.0.2.2 for emulator
-//192.168.1.2 for real device
+//local ip for real device
 const String kIp = '10.0.2.2';
 const String kBaseUrl = 'http://$kIp:3000/api/v1';
 

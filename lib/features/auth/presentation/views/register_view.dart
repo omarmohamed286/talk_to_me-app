@@ -65,8 +65,8 @@ class _RegisterViewState extends State<RegisterView> {
                 BlocConsumer<AuthCubit, AuthState>(
                   listener: (context, state) {
                     if (state is AuthSuccess) {
-                      Navigator.pushReplacementNamed(
-                          context, AppRoutes.homeView);
+                      Navigator.pushNamedAndRemoveUntil(
+                          context, AppRoutes.homeView, (route) => false);
                     }
                   },
                   builder: (context, state) {
