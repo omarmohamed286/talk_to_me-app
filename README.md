@@ -1,16 +1,26 @@
 # talk_to_me
 
-A new Flutter project.
+Talk To Me is a voice rooms app that allows all users to create rooms with a specific topic and language so they can discuss different topics or practice the languages they want to improve.
 
-## Getting Started
+## How does the app work?
 
-This project is a starting point for a Flutter application.
+the app was built to be so simple and easy to use, the user registers a new account or login if he is an old user.
+from the home page he can easily create a new room by filling a few options like the title of the room, language and language level.
+then he is directed to his room and while he is the host he can decide who joins and who not, he can also kick anyone he wants from the room.
+his room is availabe to join for all the users that opens the application in that time.
+if any room has 0 participants and 5 minutes passed without anyone joining it, it will be automatically removed.
 
-A few resources to get you started if this is your first Flutter project:
+### Features and technologies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1- Flutter
+2- ZegoCloud
+3- Socket.io
+4- FlutterSecureStorage
+5- MVVM Architectural pattern
+6- Bloc State Management
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Upcoming features
+1- Making friends and capability of calling them
+2- Updating user's info
+3- Video call
+4- Search by title, language, level
